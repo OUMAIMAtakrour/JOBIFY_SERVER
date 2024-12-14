@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  keycloak:
+    image: keycloak/keycloak:latest
+    environment:
+      KEYCLOAK_USER: admin
+      KEYCLOAK_PASSWORD: admin
+      DB_VENDOR: postgres
+      ports: '8081:8080'
